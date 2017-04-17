@@ -1,4 +1,4 @@
-appdirs==1.4.0
+appdirs==1.4.3
 cairocffi==0.8.0
 CairoSVG==2.0.1
 cffi==1.9.1
