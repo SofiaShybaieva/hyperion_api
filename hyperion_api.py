@@ -45,7 +45,7 @@ def logs():
             image_in = cv2.resize (image_in, dim)
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             # gray = cv2.bilateralFilter(gray, 9, 75, 75)
-            circles = cv2.HoughCircles(image=gray, method=cv2.HOUGH_GRADIENT, dp=9, minDist=10, minRadius=4, maxRadius=15)
+            circles = cv2.HoughCircles(image=gray, method=cv2.HOUGH_GRADIENT, dp=7, minDist=20, minRadius=10, maxRadius=30)
 
             if circles is not None:
                 # convert the (x, y) coordinates and radius of the circles to integers
